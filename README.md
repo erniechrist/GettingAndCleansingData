@@ -4,7 +4,7 @@ GettingAndCleansingData Course Project
 
 ##Repository Contents
 run_analysis.R
-CodeBook.txt
+CodeBook.md
 
 ###run_analysis.R
 This R script is used to generate the output file as described in the course project.
@@ -32,7 +32,7 @@ Code Details
 - dplyr library is used to group and summarise the data for a subecjt and activity
 - results are written to a file called *results_Final.txt*
 
-###CodeBook.txt
+###CodeBook.md
 Is a text Code Book that describes the output file of the run_analysis.R script
 
 
