@@ -33,10 +33,12 @@ subject
 - integer 
 - values 1 to 30.  
 - Each number represnts the subject (person) from which the measurements were obtained from
+
 activity	
 - characters  
 - values LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
 - This represents the activity the subject was undertaking at the time a measurement was taken.
+
 tBodyAcc.mean...Y 
 - numeric
 - summarisation by run_Analysis.R: mean()
@@ -75,7 +77,8 @@ tBodyAcc.std...Z
 - domain siginal type: Time
 - measurement source: Accelerometer
 - original measurement type: Standard Deviation
-- Axis: Z	   
+- Axis: Z	
+   
 tGravityAcc.mean...X 
 - numeric
 - summarisation by run_Analysis.R: mean()
