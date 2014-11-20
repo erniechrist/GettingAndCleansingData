@@ -1,5 +1,5 @@
 #****************************************************************
-# Step (1)
+# Step (1) of the assignment
 # Merges the training and the test sets to create one data set.
 #****************************************************************
 
@@ -17,25 +17,26 @@ rm(t)
 for (folder in c("test","train"))
 {
 
-    #load subject and convert to a vector
-    filename<-paste("UCI HAR Dataset\\",folder,"\\subject_",folder,".txt",sep="")
-    list_subject<-read.table(filename)
-    v_subject<-list_subject[,1]
-
-    #load y and convert to a vector
-    filename<-paste("UCI HAR Dataset\\",folder,"\\y_",folder,".txt",sep="")
-    list_Y<-read.table(filename)
-    v_Y<-list_Y[,1]
-
     #load X using features as the column headings
     filename<-paste("UCI HAR Dataset\\",folder,"\\X_",folder,".txt",sep="")
     list_X<-read.table(filename,col.names=v_label_features)
     # convert X to a dataframe
     df_X<-as.data.frame(list_X)
+
+    #load subject and convert to a vector
+    filename<-paste("UCI HAR Dataset\\",folder,"\\subject_",folder,".txt",sep="")
+    list_subject<-read.table(filename)
+    v_subject<-list_subject[,1]
     # add subject column
     df_X$subject<-v_subject
+
+    #load y and convert to a vector
+    filename<-paste("UCI HAR Dataset\\",folder,"\\y_",folder,".txt",sep="")
+    list_Y<-read.table(filename)
+    v_Y<-list_Y[,1]
     # add Y column
     df_X$Y<-v_Y
+
     # add activites column using Y and the activites labels
     df_X$activity<-v_label_activity[v_Y]
 
