@@ -25,15 +25,15 @@ Code Details
 - the labels_activites.txt and features.txt are loaded
 - a loop will then load the test and train datasets into separate data frames
 	- subjects and activity numbers (y_test,y_train) are loaded
-	- the measure meants X_test and X_train are loaded and the values from features.txt are used as the column headings
+	- the measurements X_test and X_train are loaded and the values from features.txt are used as the column headings
 	- subject, activity number and activity names are added
 - test and train data frames are bound together into one data frame
 - a new data frame with the subject, activity and mean and standard deviation measurements is created
-- dplyr library is used to group and summarise the data for a subecjta nd activity
-- results are written to a file
+- dplyr library is used to group and summarise the data for a subecjt and activity
+- results are written to a file called *results_Final.txt*
 
 ###CodeBook.txt
-Is a text Code Book that describes the output fofile of the run_analysis.R script
+Is a text Code Book that describes the output file of the run_analysis.R script
 
 
 
